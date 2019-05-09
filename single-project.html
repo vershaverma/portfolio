@@ -1,0 +1,104 @@
+
+<div class="tv-single-port-block">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="tv-info-wrap tv-black-text tv-alt-font">
+                <div>
+                    <span class="tv-para tv-light-blackgray-text">Data Created:</span>
+                    <span class="tv-para">December, 2018</span>
+                </div>
+                <div>
+                    <span class="tv-para tv-light-blackgray-text">Name:</span>
+                    <span class="tv-para">Versha Verma</span>
+                </div>
+                <div>
+                    <span class="tv-para tv-light-blackgray-text">Theme:</span>
+                    <span class="tv-para">Barefoot</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <ul id="items-grid" class="row tv-offspace-top-40 tv-port-image-grid  masonry clearfix">
+            <li class="tv-port-item grid-item  col-lg-4 col-md-3 col-sm-6 col-xs-12 tv-grid-gutter-00">
+                <a href="images/barefoot/1.JPG" data-image-popup="">
+                    <div class="tv-port-img-overlay"><img src="images/barefoot/1.JPG" alt="portfolio-image"></div>
+                    <div class="tv-port-overlay-icon">
+                        <div class="tv-port-icon"><div aria-hidden="true" class="ti-search"></div></div>
+                    </div>
+                </a>
+            </li>
+            <li class="tv-port-item grid-item  col-lg-4 col-md-3 col-sm-6 col-xs-12 tv-grid-gutter-00">
+                <a href="images/barefoot/2.JPG" data-image-popup="">
+                    <div class="tv-port-img-overlay"><img src="images/barefoot/2.JPG" alt="portfolio-image"></div>
+                    <div class="tv-port-overlay-icon">
+                        <div class="tv-port-icon"><div aria-hidden="true" class="ti-search"></div></div>
+                    </div>
+                </a>
+            </li>
+            <li class="tv-port-item grid-item  col-lg-4 col-md-3 col-sm-6 col-xs-12 tv-grid-gutter-00">
+                <a href="images/barefoot/3.JPG" data-image-popup="">
+                    <div class="tv-port-img-overlay"><img src="images/barefoot/3.JPG" alt="portfolio-image"></div>
+                    <div class="tv-port-overlay-icon">
+                        <div class="tv-port-icon"><div aria-hidden="true" class="ti-search"></div></div>
+                    </div>
+                </a>
+            </li>
+            <li class="tv-port-item grid-item  col-lg-4 col-md-3 col-sm-6 col-xs-12 tv-grid-gutter-00">
+                <a href="images/barefoot/4.jpg" data-image-popup="">
+                    <div class="tv-port-img-overlay"><img src="images/barefoot/4.jpg" alt="portfolio-image"></div>
+                    <div class="tv-port-overlay-icon">
+                        <div class="tv-port-icon"><div aria-hidden="true" class="ti-search"></div></div>
+                    </div>
+                </a>
+            </li>
+            <li class="tv-port-item grid-item  col-lg-4 col-md-3 col-sm-6 col-xs-12 tv-grid-gutter-00">
+                <a href="images/barefoot/5.jpg" data-image-popup="">
+                    <div class="tv-port-img-overlay"><img src="images/barefoot/5.jpg" alt="portfolio-image"></div>
+                    <div class="tv-port-overlay-icon">
+                        <div class="tv-port-icon"><div aria-hidden="true" class="ti-search"></div></div>
+                    </div>
+                </a>
+            </li>
+            <li class="tv-port-item grid-item  col-lg-4 col-md-3 col-sm-6 col-xs-12 tv-grid-gutter-00">
+                <a href="images/barefoot/6.jpg" data-image-popup="">
+                    <div class="tv-port-img-overlay"><img src="images/barefoot/6.jpg" alt="portfolio-image"></div>
+                    <div class="tv-port-overlay-icon">
+                        <div class="tv-port-icon"><div aria-hidden="true" class="ti-search"></div></div>
+                    </div>
+                </a>
+            </li>
+            <li class="tv-port-item grid-item  col-lg-4 col-md-3 col-sm-6 col-xs-12 tv-grid-gutter-00">
+                <a href="images/barefoot/7.jpg" data-image-popup="">
+                    <div class="tv-port-img-overlay"><img src="images/barefoot/7.jpg" alt="portfolio-image"></div>
+                    <div class="tv-port-overlay-icon">
+                        <div class="tv-port-icon"><div aria-hidden="true" class="ti-search"></div></div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        $masonry = $('.masonry');
+        $masonry.imagesLoaded(function () {
+            $('.masonry').masonry({
+                // options
+                itemSelector: '.grid-item',
+                percentPosition: true
+            });
+        });
+
+        var $imagePopup = $('[data-image-popup]');
+        /*Image*/
+        $imagePopup.magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+        });
+
+    });
+</script>
